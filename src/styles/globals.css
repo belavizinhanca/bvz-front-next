@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, textarea, button, a {
+  font: 400 1rem 'Montserrat', sans-serif;
+}
+
+body {
+  padding-top: 125px;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 990px){
+  body{
+    padding-top: 105px;
+  }
+}
+
+/* NAVBAR */
+
+nav {
+  background: black;
+}
+
+.navbar-brand img{
+  width: 100%;
+  max-width: 220px;
+}
+
+.navbar .navbar-nav .nav-link{
+  line-height: 30px;
+  border-bottom: 2px solid transparent;
+  color: rgb(255, 255, 255);
+  padding: 0 .5rem;
+
+}
+
+.navbar .navbar-nav .nav-link:hover{
+  border-bottom: 2px solid #EDAF44;
+  color: #EDAF44;
+}
+
+.navbar .navbar-nav .nav-link.link-login{
+  padding-left: 25px;
+}
+
+.link-login{
+  display: flex;
+  align-items: center;
+}
+
+.link-login ion-icon{
+  padding-right: 5px;
+  color: #fff;
+}
+
+.navbar-nav{
+  align-items: center;
+}
+
+.navbar-dark .navbar-toggler{
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.dropdown-menu {
+  width: 500px;
+  border-radius: 0%;
+}
+
+/* FOOTER */
+
+.footer {
+  flex: 1;
+
+
+  padding: 2.5rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.25rem;
+  align-content: center;
+  background-color: #000;
+
+
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links ul {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 475px){
+  .footer div{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+  }
+}
